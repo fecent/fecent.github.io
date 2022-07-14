@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://assets.fecent.top/bootstrap-4.5.0/bootstrap.min.css">
     <link rel="stylesheet" href="https://assets.fecent.top/bootstrap-4.5.0/bootstrap-icons.css">
     <script type="text/javascript">
-        window.onload = function() {
-            document.title = document.querySelector("frame").contentWindow.document.title;
-        }
+        window.addEventListener('message', function(e) {
+            document.title = e.data;
+        }, false);
     </script>
 </head>
 <frameset cols="100%">
